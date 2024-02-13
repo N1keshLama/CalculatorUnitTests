@@ -1,21 +1,31 @@
-﻿namespace CalculatorLibrary;
+﻿// CalculatorLibrary/Calculator.cs
 
-public class Calculator
+namespace CalculatorLibrary
 {
-    public int Add(int a, int b)
+    public class Calculator
     {
-        return a + b;
-    }
-     public int Sub(int a, int b)
-    {
-        return a - b;
-    }
-     public int Mul(int a, int b)
-    {
-        return a * b;
-    }
-     public int div(int a, int b)
-    {
-        return a / b;
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
+
+        public int Subtract(int a, int b)
+        {
+            return a - b;
+        }
+
+        public int Multiply(int a, int b)
+        {
+            return a * b;
+        }
+
+        public int Divide(int a, int b)
+        {
+            if (b == 0)
+            {
+                throw new ArgumentException("Cannot divide by zero.");
+            }
+            return a / b;
+        }
     }
 }
