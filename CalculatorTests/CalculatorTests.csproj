@@ -11,6 +11,8 @@
   
 <ItemGroup>
     <ProjectReference Include="../CalculatorLibrary/CalculatorLibrary.csproj" />
+	<DebugType>portable</DebugType>
+	<EmbedAllSources>true</EmbedAllSources>
 </ItemGroup>
 
   <ItemGroup>
