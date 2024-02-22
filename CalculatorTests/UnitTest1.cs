@@ -4,6 +4,17 @@ using CalculatorLibrary;
 using Xunit;
 using System.Numerics;
 
+using Rook;
+
+Rook.RookOptions options = new Rook.RookOptions()
+{
+    token = "ccdd5143a57987a56b7c79c46fb5a3c498a47c1ff2d27d89cbf0532b5f51393b",
+    labels = new Dictionary<string, string> { { "env", "dev" } }
+};
+
+Rook.API.Start(options);
+
+
 public class CalculatorTests
 {
     [Fact]
